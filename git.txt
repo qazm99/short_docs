@@ -1,0 +1,44 @@
+git config --global user.name "Vasya Pupkin"    // настройка пользователя
+git config --global user.email vasya@localhost
+
+git config --global core.editor nano // редактор по умолчанию
+
+git init // привязка текущей папки к гиту
+
+git add index.htm //добавление файлов к текущему репозиторию
+git add *
+git add *.js
+
+git status //текущий статус
+
+git commit // коммит(записать текущее состояние) все файлы для которых сделано add после изменений
+
+git commit -a -m "Добавлены Google Fonts" // добавляет все изменения для файлов, для которых хоть раз было сделано add
+// -a: all files  -m: message ""
+
+git log --oneline --graph // история изменений --oneline:показывает каждый коммит в одну строку 
+//--graph: графическое отображение истории изменений со всеми ветками
+
+git show 4ad7e0 //показывает изменения в коммите 4ad7e0
+
+git rm --cached stuff.txt // удаление случайно добавленного файла stuff.txt из stage area до коммита
+
+git commit --amend -m "Roboto Font" // исправление комментария последнего коммита на "Roboto Font"
+
+git revert <commit-id> // создание коммита, отменяющего изменения с коммита commit-id
+
+.gitignore // файл в корне папки с репозиторием гита содержит инфу по папкам и файлам которые не надо комитить
+// файл Thumbs.db  tmp/ любой каталог tmp  /tmp/ - конкретный каталог tmp в корне *.txt -шаблон для файла или каталога
+
+git clone https://github.com/netology-git/demo.git // клонирование удаленного репозитория по ссылке
+
+git remote -v // показывает все подключенные удаленные репозитории
+
+git remote add origin https://github.com/netology-git/demo.git // привязка удаленного репозитория
+
+git push -u origin master // отправка изменений в репозиторий origin ветки master в первый раз
+
+
+
+
+ 
