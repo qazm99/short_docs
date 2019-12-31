@@ -38,6 +38,8 @@ git remote add origin https://github.com/netology-git/demo.git // привязк
 
 git push -u origin master // отправка изменений в репозиторий origin ветки master в первый раз
 
+git pull // загрузить изменения с сервера
+
 
 
 
